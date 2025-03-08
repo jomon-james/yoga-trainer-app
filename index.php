@@ -11,6 +11,8 @@ if (isset($_SESSION['user_id'])) {
 header("Location: auth/login.php");
 exit();
 ?>
+<head><link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
 <script src="assets/js/script.js"></script>
 </body>

@@ -2,28 +2,41 @@
 session_start();
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../auth/login.php");
+    exit();
 }
-?><head>
-<link rel="stylesheet" href="../assets/css/style.css">
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Level</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="main-header">
+            <h1>Beginner Yoga Exercises</h1>
+        </header>
 
-<h2>Intermediate Level Yoga</h2>
+        <div class="levels-container">
+            <div class="level-card">
+                <img src="../assets/images/bridge_pose.png" class="level-img">
+                <h3 class="level-title">Bridge Pose</h3>
+                <p> Lie on your back, bend knees, then lift hips off the ground using your feet and arms to create a bridge-like shape.</p>
+            </div>
 
-<div>
-    <h3>1. Mountain Pose</h3>
-    <img src="../assets/images/mountain_pose.jpg" width="200">
-    <p>Stand tall, keep your arms by your sides, and breathe deeply.</p>
-</div>
+            <div class="level-card">
+                <img src="../assets/images/warrior_pose.jpg" class="level-img">
+                <h3 class="level-title">Warrior Pose</h3>
+                <p> Stand with one leg stepped back, bend the front knee at a 90-degree angle, keeping the back leg straight, and extend arms depending on the variation of the pose.</p>
+            </div>
+        </div>
 
-<div>
-    <h3>2. Downward Dog</h3>
-    <img src="../assets/images/downward_dog.jpg" width="200">
-    <p>Form an inverted 'V' shape with your body and stretch.</p>
-</div>
-
-<a href="home.php">Back to Levels</a>
-<a href="../auth/logout.php">Logout</a>
-<script src="../assets/js/script.js"></script>
+        <a href="home.php" class="logout-btn">Back to Levels</a>
+    </div>
 </body>
+
+</html>

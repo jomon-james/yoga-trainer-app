@@ -2,28 +2,41 @@
 session_start();
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../auth/login.php");
+    exit();
 }
-?><head>
-<link rel="stylesheet" href="../assets/css/style.css">
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Level</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="main-header">
+            <h1>Beginner Yoga Exercises</h1>
+        </header>
 
-<h2>Beginner Level Yoga</h2>
+        <div class="levels-container">
+            <div class="level-card">
+                <img src="../assets/images/mountain_pose.jpg" class="level-img">
+                <h3 class="level-title">Mountain Pose</h3>
+                <p>Stand tall, keep your arms by your sides, and breathe deeply.</p>
+            </div>
 
-<div>
-    <h3>1. Mountain Pose</h3>
-    <img src="../assets/images/mountain_pose.jpg" width="200">
-    <p>Stand tall, keep your arms by your sides, and breathe deeply.</p>
-</div>
+            <div class="level-card">
+                <img src="../assets/images/downward_dog.png" class="level-img">
+                <h3 class="level-title">Downward Dog</h3>
+                <p>Form an inverted 'V' shape with your body and stretch.</p>
+            </div>
+        </div>
 
-<div>
-    <h3>2. Downward Dog</h3>
-    <img src="../assets/images/downward_dog.jpg" width="200">
-    <p>Form an inverted 'V' shape with your body and stretch.</p>
-</div>
-
-<a href="home.php">Back to Levels</a>
-<a href="../auth/logout.php">Logout</a>
-<script src="../assets/js/script.js"></script>
+        <a href="home.php" class="logout-btn">Back to Levels</a>
+    </div>
 </body>
+
+</html>
