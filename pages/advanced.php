@@ -18,7 +18,7 @@ if (!isset($_SESSION['user_id'])) {
 <body>
     <div class="container">
         <header class="main-header">
-            <h1>Beginner Yoga Exercises</h1>
+            <h1>Advanced Yoga Exercises</h1>
         </header>
 
         <div class="levels-container">
