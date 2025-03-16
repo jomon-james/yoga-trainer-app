@@ -196,6 +196,107 @@ button:hover, .logout-btn:hover {
     transform: scale(1.05);
 }
 
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-card {
+    width: 320px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #27ae60;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #27ae60, #2ecc71);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed; /* Sticks navbar to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Add margin to the body to prevent overlap */
+body {
+    margin-top: 80px; /* Push content down */
+}
+
+/* Logo Styling */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Navbar Items */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .levels-container {

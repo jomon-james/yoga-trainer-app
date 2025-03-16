@@ -16,6 +16,15 @@ if (!isset($_SESSION['user_id'])) {
     </head>
 
 <body>
+<div class="navbar">
+    <a href="home.php" class="logo">Yoga Trainer</a>
+    <ul>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="video_tutorials.php">Video Tutorials</a></li>
+        <li><a href="progress.php">Progress</a></li>
+        <li><a href="../auth/logout.php">Logout</a></li>
+    </ul>
+</div>
     <div class="container">
         <header class="main-header">
             <h1>Choose Your Yoga Level</h1>
@@ -42,7 +51,7 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </div>
 
-        <a href="../auth/logout.php" class="logout-btn">Logout</a>
+        <!-- <a href="../auth/logout.php" class="logout-btn">Logout</a> -->
     </div>
 </body>
 
