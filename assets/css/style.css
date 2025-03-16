@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    background: linear-gradient(to right, #afc6de, #9acde9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ body {
     margin: auto;
     text-align: center;
     padding: 20px;
-    background: #f8f9fa;
+    background: #8cb4dc;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease-in-out;
@@ -42,7 +42,7 @@ body {
 
 /* Form Container */
 .form-container {
-    background: white;
+    background: rgb(159, 202, 206);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -134,7 +134,7 @@ button:hover, .logout-btn:hover {
 
 /* Level Card */
 .level-card {
-    background: white;
+    background: rgb(156, 208, 211);
     padding: 20px;
     border-radius: 15px;
     transition: 0.3s ease-in-out;
